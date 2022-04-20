@@ -1,0 +1,389 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" lang="ua" content="Вранці 24 лютого Росія розпочала широкомасштабне вторгнення в Україну по всій довжині спільного кордону і з території Білорусі.">
+    <meta name="description" lang="en" content="On the morning of February 24, Russia launched a large-scale invasion of Ukraine along the entire length of the common border and from the territory of Belarus.">
+    <meta name="author" content="Igor Karpov">
+    <meta name="generator" content="handmade">
+    <title>Коли закінчиться війна в Україні</title>
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="icon" href="icons/ua_icon.ico">
+    <meta name="theme-color" content="#7952b3">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header sticky-top py-1">
+    <nav class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="/peremoha">
+            <img src="icons/ua.png" width="24" height="24">
+        </a>
+        <div class="col-md-3 offset-md-9 col-sm-1">
+            <a class="py-2 d-md-inline-block switch-lang pull-right" href="#en"><span lang="ua">Eng</span></a>
+            <a class="py-2 d-md-inline-block switch-lang pull-right" href="#ua"><span lang="en">Укр</span></a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-8 p-lg-8 mx-auto my-8">
+            <h1 class="display-12 fw-normal" lang="en">The war will end in Ukraine</h1>
+            <h1 class="display-12 fw-normal" lang="ua">Війна в Україні завершиться через</h1>
+            <div class="panel panel-default" data-toggle="tooltip" data-placement="top" title="">
+                <div class="panel-body">
+                    <div class="lead war-end-countdown ua" lang="ua"></div>
+                    <div class="lead war-end-countdown en" lang="en"></div>
+                </div>
+            </div>
+            <p class="lead fw-normal" lang="ua">
+                Оцінка за найближчою датою знищення одного з озброєнь ворога
+            </p>
+            <p class="lead fw-normal" lang="en">
+                Estimate the next date of destruction of one of the enemy's weapons
+            </p>
+            <a class="btn btn-outline-secondary" href="#boostTheEnd">
+                <span lang="ua">Прискорити закінчення війни</span>
+                <span lang="en">Hasten the end of the war</span>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="soldier">
+            <div class="my-3 py-3">
+                <h2 class="display-5">
+                    <span lang="ua">Особовий склад</span>
+                    <span lang="en">Soldiers</span>
+                </h2>
+                <p class="lead">
+                    <span lang="ua">
+                        За <span class="daysOfWar"></span> дні війни знищено та поранено близько
+                    <span class="killed"></span> із <span class="total"></span> осіб.
+                    Що складає <span class="killedPerDay"></span> особи на день.</br>
+                        Тож, війна закінчиться через <span class="warEndInDays"></span> дні &mdash; <span class="warEndDate"></span>.
+                    </span>
+                    <span lang="en">
+                        In the <span class="daysOfWar"></span> days of the war, about <span class="killed"></span> of the
+                        <span class="total"></span> people were killed and wounded. Which is <span class="killedPerDay"></span>
+                        people per day. So, the war will end in <span class="warEndInDays"></span> days &mdash; <span class="warEndDate"></span>.
+                    </span>
+                </p>
+
+            </div>
+            <div class="my-3 p-3 infographic"></div>
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="tank">
+            <div class="my-3 py-3">
+                <h2 class="display-5">
+                    <span lang="ua">Танки</span>
+                    <span lang="en">Tanks</span>
+                </h2>
+                <p class="lead">
+                    <span lang="ua">
+                        За <span class="daysOfWar"></span> дні війни знищено <span class="killed"></span> із
+                        <span class="total"></span> танків окупантів. Що складає <span class="killedPerDay"></span> танки на день.
+                        Таким чином, війна закінчиться через <span class="warEndInDays"></span> дні &mdash; <span class="warEndDate"></span>.
+                    </span>
+                    <span lang="en">
+                        During the <span class="daysOfWar"></span> days of the war, <span class="killed"></span>
+                        of the <span class="total"></span> enemy tanks were destroyed. Which is <span class="killedPerDay"></span>
+                        tanks per day. Thus, the war will end in <span class="warEndInDays"></span> days &mdash; <span class="warEndDate"></span>.
+                    </span>
+                </p>
+            </div>
+            <div class="my-3 py-3 infographic"></div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="jet">
+            <div class="my-3 py-3">
+                <h2 class="display-5">
+                    <span lang="ua">Літаки</span>
+                    <span lang="en">Jets</span>
+                </h2>
+                <p class="lead">
+                    <span lang="ua">
+                        За <span class="daysOfWar"></span> дні війни знищено <span class="killed"></span> із
+                        <span class="total"></span> літака. Що складає <span class="killedPerDay"></span> літака на день.
+                        Таким чином, війна закінчиться через <span class="warEndInDays"></span>
+                        дні &mdash; <span class="warEndDate"></span>.
+                    </span>
+                    <span lang="en">
+                        During the <span class="daysOfWar"></span> days of the war, <span class="killed"></span> out of
+                        <span class="total"></span> planes were destroyed.
+                        Which is <span class="killedPerDay"></span> aircraft per day. Thus, the war will end in
+                        <span class="warEndInDays"></span> days &mdash; <span class="warEndDate"></span>.
+                    </span>
+                </p>
+            </div>
+            <div class="my-3 p-3 infographic"></div>
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="ppo">
+            <div class="my-3 p-3">
+                <h2 class="display-5">
+                    <span lang="ua">Засоби ППО</span>
+                    <span lang="en">Anti-aircraft warfare systems</span>
+                </h2>
+                <p class="lead">
+                    <span lang="ua">
+                        За <span class="daysOfWar"></span> дні війни знищено <span class="killed"></span>
+                        із <span class="total"></span> засовыв ППО. Що складає <span class="killedPerDay"></span> засобів ППО на день.
+                        Таким чином, війна закінчиться через <span class="warEndInDays"></span> дні
+                        &mdash; <span class="warEndDate"></span>.
+                    </span>
+                    <span lang="en">
+                        During the <span class="daysOfWar"></span> days of the war, <span class="killed"></span> out of
+                        <span class="total"></span> Anti-aircraft warfare systems were destroyed.
+                        Which is <span class="killedPerDay"></span> air defense per day. Thus, the war will end in
+                        <span class="warEndInDays"></span> days &mdash; <span class="warEndDate"></span>.
+                    </span>
+                </p>
+            </div>
+            <div class="my-3 p-3 infographic"></div>
+        </div>
+
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="helicopter">
+            <div class="my-3 py-3">
+                <h2 class="display-5">
+                    <span lang="ua">Гелікоптери</span>
+                    <span lang="en">Helicopters</span>
+                </h2>
+                <p class="lead">
+                    <span lang="ua">
+                        За <span class="daysOfWar"></span> дні війни знищено <span class="killed"></span> із
+                        <span class="total"></span> гелікоптерів. Що складає <span class="killedPerDay"></span> гелікоптера на день.
+                        Таким чином, війна закінчиться через <span class="warEndInDays"></span> дні
+                        &mdash; <span class="warEndDate"></span>.
+                    </span>
+                    <span lang="en">
+                        During the <span class="daysOfWar"></span> days of the war, <span class="killed"></span> out of
+                        <span class="total"></span> helicopters were destroyed. Which is <span class="killedPerDay"></span>
+                        helicopters per day. Thus, the war will end in <span class="warEndInDays"></span> days
+                        &mdash; <span class="warEndDate"></span>.
+                    </span>
+                </p>
+            </div>
+            <div class="my-3 p-3 infographic"></div>
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="ship">
+            <div class="my-3 p-3">
+                <h2 class="display-5">
+                    <span lang="ua">Кораблі</span>
+                    <span lang="en">Ships</span>
+                </h2>
+                <p class="lead">
+                    <span lang="ua">
+                        За <span class="daysOfWar"></span> дні війни знищено <span class="killed"></span> із
+                        <span class="total"></span> кораблів. Що складає <span class="killedPerDay"></span> кораблів на день.
+                        Таким чином, війна закінчиться через <span class="warEndInDays"></span> дні
+                        &mdash; <span class="warEndDate"></span>.
+                    </span>
+                    <span lang="en">
+                        During the <span class="daysOfWar"></span> days of the war, <span class="killed"></span>
+                        of the <span class="total"></span> ships were destroyed.
+                        Which is <span class="killedPerDay"></span> ships per day. Thus, the war will end in
+                        <span class="warEndInDays"></span> days &mdash; <span class="warEndDate"></span>.
+                    </span>
+                </p>
+            </div>
+            <div class="my-3 p-3 infographic"></div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="bbm">
+            <div class="my-3 p-3">
+                <h2 class="display-5">
+                    <span lang="ua">Бойові броньовані машини</span>
+                    <span lang="en">Armoured fighting vehicles</span>
+                </h2>
+                <p class="lead">
+                    <span lang="ua">
+                        За <span class="daysOfWar"></span> дні війни знищено <span class="killed"></span> із
+                        <span class="total"></span> бойвих броньваних машин. Що складає
+                        <span class="killedPerDay"></span> бойових броньованих машин на день. Таким чином,
+                        війна закінчиться через <span class="warEndInDays"></span> дні &mdash; <span class="warEndDate"></span>.
+                    </span>
+                    <span lang="en">
+                        During the <span class="daysOfWar"></span> days of the war, <span class="killed"></span> out of
+                        <span class="total"></span> armored fighting vehicles were destroyed. Which is <span class="killedPerDay"></span>
+                        armored combat vehicles per day. Thus, the war will end in <span class="warEndInDays"></span> days
+                        &mdash; <span class="warEndDate"></span>.
+                    </span>
+                </p>
+            </div>
+            <div class="my-3 p-3 infographic"></div>
+        </div>
+    </div>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="zvr">
+            <div class="my-3 p-3">
+                <h2 class="display-5">
+                    <span lang="ua">Золотовалютні резерви</span>
+                    <span lang="en">Foreign-exchange reserves</span>
+                </h2>
+                <p class="lead">
+                    <span lang="ua">
+                        Після нападу на Україну у окупантів заблоковано ЗВР <span class="killed"></span>млрд.дол із
+                        <span class="total"></span>млрд.дол
+                    </span>
+                    <span lang="en">
+                        After the attack on Ukraine, the occupiers lost $<span class="killed"></span> billion from
+                        $<span class="total"></span> billion of foreign-exchange reserves.
+                    </span>
+                </p>
+            </div>
+            <div class="my-3 p-3 infographic"></div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="art">
+            <div class="my-3 py-3">
+                <h2 class="display-5">
+                    <span lang="ua">Артилерійські системи</span>
+                    <span lang="en">Artillery</span>
+                </h2>
+                <p class="lead">
+                    <span lang="ua">З початку війни окупанти втратили <span class="killed"></span> одиниць артилерійських систем.</span>
+                    <span lang="en">Since the beginning of the war, the occupiers have lost <span class="killed"></span> units of artillery systems.</span>
+                </p>
+            </div>
+            <div class="my-3 p-3 infographic"></div>
+        </div>
+    </div>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="bpla">
+            <div class="my-3 py-3">
+                <h2 class="display-5">
+                    <span lang="ua">БПЛА оперативно-тактичного рівня</span>
+                    <span lang="en">UAVs at the tactical operations level</span>
+                </h2>
+                <p class="lead">
+                    <span lang="ua">За <span class="daysOfWar"></span> дні війни знищено <span class="killed"></span> ворожих БПЛА.</span>
+                    <span lang="en">During the <span class="daysOfWar"></span> days of the war, <span class="killed"></span> enemy UAVs were destroyed.</span>
+                </p>
+            </div>
+            <div class="my-3 p-3 infographic"></div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="car">
+            <div class="my-3 py-3">
+                <h2 class="display-5">
+                    <span lang="ua">Автомобільна техніка</span>
+                    <span lang="en">Cars</span>
+                </h2>
+                <p class="lead">
+                    <span lang="ua">За <span class="daysOfWar"></span> дні війни знищено <span class="killed"></span> автомобілів окупантів.</span>
+                    <span lang="en">During the <span class="daysOfWar"></span> days of the war, <span class="killed"></span>
+                        cars of the occupiers were destroyed</span>
+                </p>
+            </div>
+            <div class="my-3 p-3 infographic"></div>
+        </div>
+    </div>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="rszv">
+            <div class="my-3 py-3">
+                <h2 class="display-5">
+                    <span lang="ua">Реактивні системи залпового вогню</span>
+                    <span lang="en">Element reactive system volley</span>
+                </h2>
+                <p class="lead">
+                    <span lang="ua">За <span class="daysOfWar"></span> дні війни знищено <span class="killed"></span>
+                        ворожих одиниці РСЗВ.</span>
+                    <span lang="en">During the <span class="daysOfWar"></span> days of the war, <span class="killed"></span>
+                        enemy Element reactive system volley units were destroyed.</span>
+                </p>
+            </div>
+            <div class="my-3 p-3 infographic"></div>
+        </div>
+
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="oil">
+            <div class="my-3 p-3">
+                <h2 class="display-5">
+                    <span lang="ua">Цистерни з ПММ</span>
+                    <span lang="en">Fuel tanks</span>
+                </h2>
+                <p class="lead">
+                    <span lang="ua">За <span class="daysOfWar"></span> дні війни знищено <span class="killed"></span>
+                        ворожих цистерн з ПММ.</span>
+                    <span lang="en">
+                        During the <span class="daysOfWar"></span> days of the war, <span class="killed"></span> enemy
+                        fuel tanks were destroyed.
+                    </span>
+                </p>
+            </div>
+            <div class="my-3 p-3 infographic"></div>
+        </div>
+    </div>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="boostTheEnd">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">
+                    <span lang="ua">Stand with Ukraine. Save peace in the world!</span>
+                    <span lang="en">Stand with Ukraine. Save peace in the world!</span>
+                </h2>
+                <p class="lead">
+                    <a href="https://helpua.bank.gov.ua/">https://helpua.bank.gov.ua/</a>
+                </p>
+            </div>
+            <div class="my-3 p-3">
+                <a href="https://helpua.bank.gov.ua/"><img src="img/ua.jpg" width="100%"></a>
+            </div>
+        </div>
+
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">
+                    <span lang="ua">Благодійний фонд Сергія Притули</span>
+                    <span lang="en">Благодійний фонд Сергія Притули</span>
+                </h2>
+                <p class="lead">
+                    <a href="https://www.facebook.com/serhiyprytula">https://www.facebook.com/serhiyprytula</a>
+                </p>
+            </div>
+            <div class="my-3 p-3">
+                <a href="https://www.facebook.com/serhiyprytula"><img src="img/prytula-serhiy.jpg" width="100%"></a>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="container py-5">
+    <div class="row">
+        <div class="col-12 col-md">
+            <img src="icons/ua.png" width="26" height="26">
+            <small class="d-block mb-3 text-muted">
+                &copy; 2022
+                <span lang="ua">Зроблено в Україні</span>
+                <span lang="en">Made in Ukraine</span>
+            </small>
+        </div>
+        <div class="col-12 col-md text-muted">
+            <div class="text-muted">
+                <span lang="ua">Дата оновлення:</span>
+                <span lang="en">Last update:</span>
+                <span id="lastUpdate"></span>
+            </div>
+            <p lang="ua">Всі дані було взято з відкритих джерел та з сайту <a href="https://www.zsu.gov.ua/">ЗСУ</a></p>
+            <p lang="en">All data were taken from open sources and from the website of the <a href="https://www.zsu.gov.ua/">Armed Forces of Ukraine</a></p>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/data.js" ></script>
+<script src="js/main.js" ></script>
+<script src="dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>
