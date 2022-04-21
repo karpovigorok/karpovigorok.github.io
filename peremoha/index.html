@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,13 +19,21 @@
         <link rel="icon" href="icons/ua_icon.ico">
     <meta name="theme-color" content="#7952b3">
     <link href="css/main.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BB39DLQCFM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-BB39DLQCFM');
+    </script>
 </head>
 <body>
 
 <header class="site-header sticky-top py-1">
     <nav class="container d-flex flex-column flex-md-row justify-content-between">
         <a class="py-2" href="/peremoha">
-            <img src="icons/ua.png" width="24" height="24">
+            <img src="icons/ua.png" width="24" height="24" alt="UA">
         </a>
         <div class="col-md-3 offset-md-9 col-sm-1">
             <a class="py-2 d-md-inline-block switch-lang pull-right" href="#en"><span lang="ua">Eng</span></a>
@@ -70,7 +78,7 @@
                     <span lang="ua">
                         За <span class="daysOfWar"></span> дні війни знищено та поранено близько
                     <span class="killed"></span> із <span class="total"></span> осіб.
-                    Що складає <span class="killedPerDay"></span> особи на день.</br>
+                    Що складає <span class="killedPerDay"></span> особи на день.<br>
                         Тож, війна закінчиться через <span class="warEndInDays"></span> дні &mdash; <span class="warEndDate"></span>.
                     </span>
                     <span lang="en">
@@ -340,7 +348,7 @@
                 </p>
             </div>
             <div class="my-3 p-3">
-                <a href="https://helpua.bank.gov.ua/"><img src="img/ua.jpg" width="100%"></a>
+                <a href="https://helpua.bank.gov.ua/"><img src="img/ua.jpg" alt="Stand With Ukraine" width="100%"></a>
             </div>
         </div>
 
@@ -355,7 +363,7 @@
                 </p>
             </div>
             <div class="my-3 p-3">
-                <a href="https://www.facebook.com/serhiyprytula"><img src="img/prytula-serhiy.jpg" width="100%"></a>
+                <a href="https://www.facebook.com/serhiyprytula"><img src="img/prytula-serhiy.jpg" alt="Prytula Serhiy" width="100%"></a>
             </div>
         </div>
     </div>
@@ -365,7 +373,7 @@
 <footer class="container py-5">
     <div class="row">
         <div class="col-12 col-md">
-            <img src="icons/ua.png" width="26" height="26">
+            <img src="icons/ua.png" width="26" height="26" alt="UA">
             <small class="d-block mb-3 text-muted">
                 &copy; 2022
                 <span lang="ua">Зроблено в Україні</span>
