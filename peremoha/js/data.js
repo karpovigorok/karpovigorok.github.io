@@ -1,49 +1,49 @@
-//https://www.mil.gov.ua/news/2022/04/20/vtrati-rosijskih-okupantiv-stanovlyat-priblizno-20-900-osib-znishheno-majzhe-2100-bojovih-bronovanih-mashin-voroga-%E2%80%93-generalnij-shtab-zs-ukraini/
+//https://www.mil.gov.ua/news/2022/04/22/vtrati-rosijskih-okupantiv-stanovlyat-176-litakiv-ta-153-vertoloti-znishheno-ponad-1520-odinicz-avtomobilnoi-tehniki-%E2%80%93-generalnij-shtab-zs-ukraini/
 let war = {
     "data": {
         "soldier": {
             "total": 200000,
-            "killed": 20900 + 40000,
+            "killed": 21200 + 40000,
             "divider": 1000
         },
         "tank": {
             "total": 2840,
-            "killed": 815,
+            "killed": 838,
             "divider": 100
         },
         "bbm": {
             "total": "10228",
-            "killed": "2087",
+            "killed": "2162",
             "divider": 1000
         },
         "art": {
             "total": 0,
-            "killed": 391,
+            "killed": 397,
             "divider": 10
         },
         "rszv": {
             "total": 0,
-            "killed": 136,
+            "killed": 138,
             "divider": 10
         },
         "ppo": {
             "total": 620,
-            "killed": 67,
+            "killed": 69,
             "divider": 10
         },
         "jet": {
             "total": "300",
-            "killed": "171",
+            "killed": "176",
             "divider": 10
         },
         "helicopter": {
             "total": "1052",
-            "killed": "150",
+            "killed": "153",
             "divider": 10
         },
         "car": {
             "total": "0",
-            "killed": "1504",
+            "killed": "1523",
             "divider": 100
         },
         "ship": {
@@ -58,7 +58,7 @@ let war = {
         },
         "bpla": {
             "total": 0,
-            "killed": 165,
+            "killed": 172,
             "divider": 10
         },
         "zvr": {
@@ -68,5 +68,5 @@ let war = {
         }
     },
     "dateStart": '2022-02-24',
-    "lastUpdate": '2022-04-20'
+    "lastUpdate": '2022-04-22'
 };
