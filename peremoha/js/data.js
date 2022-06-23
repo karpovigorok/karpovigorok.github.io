@@ -1,54 +1,54 @@
-//https://www.mil.gov.ua/news/2022/06/10/vid-pochatku-povnomasshtabnoi-vijni-proti-ukraini-rosiya-vtratila-uzhe-31900-osib-osobovogo-skladu-znishheno-712-artilerijskih-sistem-voroga-%E2%80%93-generalnij-shtab-zs-ukraini/
+//https://www.mil.gov.ua/news/2022/06/23/vtrati-rosijskih-okupantiv-stanovlyat-ponad-1500-tankiv-znishheno-majzhe-100-zasobiv-ppo-voroga-%E2%80%93-generalnij-shtab-zs-ukraini/
 let war = {
     "data": {
         "soldier": {
             "total": 200000,
-            "killed": 31900 + 60000,
+            "killed": 34430 + 70000,
             "divider": 1000
         },
         "tank": {
             "total": 2840,
-            "killed": 1409,
+            "killed": 1504,
             "divider": 100
         },
         "bbm": {
-            "total": "10228",
-            "killed": "3450",
+            "total": 10228,
+            "killed": 3632,
             "divider": 1000
         },
         "art": {
             "total": 0,
-            "killed": 712,
+            "killed": 756,
             "divider": 10
         },
         "rszv": {
             "total": 0,
-            "killed": 222,
+            "killed": 240,
             "divider": 10
         },
         "ppo": {
             "total": 620,
-            "killed": 97,
+            "killed": 99,
             "divider": 10
         },
         "jet": {
-            "total": "300",
-            "killed": "212",
+            "total": 300,
+            "killed": "216",
             "divider": 10
         },
         "helicopter": {
-            "total": "1052",
-            "killed": "178",
+            "total": 1052,
+            "killed": 183,
             "divider": 10
         },
         "car": {
             "total": "0",
-            "killed": "2438",
+            "killed": "2548",
             "divider": 100
         },
         "ship": {
             "total": "100",
-            "killed": "13",
+            "killed": "14",
             "divider": 1
         },
         "oil": {
@@ -58,7 +58,7 @@ let war = {
         },
         "bpla": {
             "total": 0,
-            "killed": 572,
+            "killed": 620,
             "divider": 10
         },
         "zvr": {
@@ -68,5 +68,5 @@ let war = {
         }
     },
     "dateStart": '2022-02-24',
-    "lastUpdate": '2022-06-10'
+    "lastUpdate": '2022-06-23'
 };
