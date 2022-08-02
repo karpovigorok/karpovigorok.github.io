@@ -63,7 +63,7 @@ let war = {
         },
         "zvr": {
             "total": 593,
-            "killed": 300,
+            "killed": 350,
             "divider": 10
         }
     },
