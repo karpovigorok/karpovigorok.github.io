@@ -1,49 +1,49 @@
-//https://www.mil.gov.ua/news/2022/08/02/vtrati-rosijskih-okupantiv-stanovlyat-223-litaki-ta-191-vertolit-znishheno-739-vorozhih-bpla-%E2%80%93-generalnij-shtab-zs-ukraini/
+//https://www.mil.gov.ua/news/2022/09/05/vtrati-rosijskih-okupantiv-stanovlyat-majzhe-2070-tankiv-znishheno-ponad-4450-bojovih-bronovanih-mashin-voroga-%E2%80%93-generalnij-shtab-zs-ukraini/
 let war = {
     "data": {
         "soldier": {
             "total": 200000,
-            "killed": 41170 + 80000,
+            "killed": 49800 + 90000,
             "divider": 1000
         },
         "tank": {
             "total": 2840,
-            "killed": 1768,
+            "killed": 2068,
             "divider": 100
         },
         "bbm": {
             "total": 10228,
-            "killed": 4014,
+            "killed": 4459,
             "divider": 1000
         },
         "art": {
             "total": 0,
-            "killed": 936,
+            "killed": 1157,
             "divider": 10
         },
         "rszv": {
             "total": 0,
-            "killed": 259,
+            "killed": 294,
             "divider": 10
         },
         "ppo": {
             "total": 620,
-            "killed": 117,
+            "killed": 156,
             "divider": 10
         },
         "jet": {
             "total": 300,
-            "killed": 223,
+            "killed": 236,
             "divider": 10
         },
         "helicopter": {
             "total": 1052,
-            "killed": 191,
+            "killed": 206,
             "divider": 10
         },
         "car": {
             "total": 0,
-            "killed": 2914,
+            "killed": 3286,
             "divider": 100
         },
         "ship": {
@@ -58,7 +58,7 @@ let war = {
         },
         "bpla": {
             "total": 0,
-            "killed": 739,
+            "killed": 867,
             "divider": 10
         },
         "zvr": {
@@ -68,5 +68,5 @@ let war = {
         }
     },
     "dateStart": '2022-02-24',
-    "lastUpdate": '2022-08-02'
+    "lastUpdate": '2022-09-05'
 };
